@@ -21,7 +21,9 @@ Working from this perspective I can complete the `2 hour` approach but try to ma
 
 To get more specific. `2 Hour` meant not supporting persistent storage. Since the obvious addition was persistent storage in the `2 Week` vision I left code to easily add that in.  
 
-  
+## Problems
+
+Moving forward with this the only structural problem I see is that I dont have the factory for the entries in a more globally accessable area. More than likely any additional views would also want access to this data. 
 
 
 # [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
