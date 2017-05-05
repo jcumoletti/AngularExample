@@ -278,19 +278,17 @@ angular.module("details/details.tpl.html", []).run(["$templateCache", function($
 angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/home.tpl.html",
     "<div class=\"jumbotron\">\n" +
-    "  <h1>Dont Forget</h1>\n" +
+    "  <h1>Organizer</h1>\n" +
     "\n" +
     "  <p class=\"lead\">\n" +
-    "    Everything you need to kickstart AngularJS projects: a best-practice\n" +
-    "    diretory structure, an intelligent build system, and the best web design\n" +
-    "    libraries around.\n" +
+    "    A place tp keep track of important links.\n" +
     "  </p>\n" +
     "\n" +
     "\n" +
     "</div>\n" +
     "<div class=\"form-group\">	\n" +
-    "	<label for=\"entry-link\">Search:</label>\n" +
-    "	<input type=\"text\" data-ng-model=\"filterText\" class=\"form-control\" placeholder=\"Search\">\n" +
+    "	<label for=\"search-box\">Search:</label>\n" +
+    "	<input id='search-box' type=\"text\" data-ng-model=\"filterText\" class=\"form-control\" placeholder=\"Search\">\n" +
     "</div>\n" +
     "\n" +
     "<ul class=\"list-group\">\n" +
@@ -305,19 +303,19 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "<form>\n" +
     "	<input type=\"hidden\" data-ng-model=\"entry.entryId\" />\n" +
     "	<div class=\"form-group\">\n" +
-    "		<label for=\"entry-link\">Entry Label:</label>\n" +
-    "   		<input type=\"text\" data-ng-model=\"entry.entryLabel\" class=\"form-control\" id=\"entry-link\" aria-describedby=\"entry-link-help\" placeholder=\"Enter Label (required)\">\n" +
-    "    	<small id=\"entry-link-help\" class=\"form-text text-muted\">Something recognizable so you dont see a list of 25 stack overflow urls.</small>\n" +
+    "		<label for=\"entry-label\">Entry Label:</label>\n" +
+    "   		<input type=\"text\" data-ng-model=\"entry.entryLabel\" class=\"form-control\" id=\"entry-label\" aria-describedby=\"entry-label-help\" placeholder=\"Enter Label (required)\">\n" +
+    "    	<small id=\"entry-label-help\" class=\"form-text text-muted\">Something recognizable so you dont see a list of 25 stack overflow urls.</small>\n" +
     "	</div>\n" +
     "	<div class=\"form-group\">\n" +
     "		<label for=\"entry-link\">Entry Link:</label>\n" +
     "   		<input type=\"text\" data-ng-model=\"entry.entryLink\" class=\"form-control\" id=\"entry-link\" aria-describedby=\"entry-link-help\" placeholder=\"Enter URL (required)\">\n" +
-    "    	<small id=\"entry-link-help\" class=\"form-text text-muted\">Use the full URL.</small>\n" +
+    "    	<small id=\"entry-link-help\" class=\"form-text text-muted\">The url for the resource.</small>\n" +
     "	</div>\n" +
     "	<div class=\"form-group\">\n" +
-    "		<label for=\"entry-description\">Entry Keywords</label>\n" +
-    "   		<input type=\"text\" data-ng-model=\"entry.entryKeywords\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\">\n" +
-    "    	<small id=\"emailHelp\" class=\"form-text text-muted\">Put some keywords in and find it easier when you need it.</small>\n" +
+    "		<label for=\"entry-keywords\">Entry Keywords</label>\n" +
+    "   		<input type=\"text\" data-ng-model=\"entry.entryKeywords\" class=\"form-control\" id=\"entry-keywords\" aria-describedby=\"entry-keywords-help\" placeholder=\"Keywords\">\n" +
+    "    	<small id=\"entry-keywords-help\" class=\"form-text text-muted\">Put some keywords in and find it easier when you need it.</small>\n" +
     "	</div>\n" +
     "	\n" +
     "	<button ng-class=\"validateForm() ? ' ' : 'disabled'\" class=\"btn btn-primary \" data-ng-click=\"addEntry()\">Add Entry</button>\n" +

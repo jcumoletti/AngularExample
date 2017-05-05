@@ -1,17 +1,15 @@
 <div class="jumbotron">
-  <h1>Dont Forget</h1>
+  <h1>Organizer</h1>
 
   <p class="lead">
-    Everything you need to kickstart AngularJS projects: a best-practice
-    diretory structure, an intelligent build system, and the best web design
-    libraries around.
+    A place tp keep track of important links.
   </p>
 
 
 </div>
 <div class="form-group">	
-	<label for="entry-link">Search:</label>
-	<input type="text" data-ng-model="filterText" class="form-control" placeholder="Search">
+	<label for="search-box">Search:</label>
+	<input id='search-box' type="text" data-ng-model="filterText" class="form-control" placeholder="Search">
 </div>
 
 <ul class="list-group">
@@ -26,19 +24,19 @@
 <form>
 	<input type="hidden" data-ng-model="entry.entryId" />
 	<div class="form-group">
-		<label for="entry-link">Entry Label:</label>
-   		<input type="text" data-ng-model="entry.entryLabel" class="form-control" id="entry-link" aria-describedby="entry-link-help" placeholder="Enter Label (required)">
-    	<small id="entry-link-help" class="form-text text-muted">Something recognizable so you dont see a list of 25 stack overflow urls.</small>
+		<label for="entry-label">Entry Label:</label>
+   		<input type="text" data-ng-model="entry.entryLabel" class="form-control" id="entry-label" aria-describedby="entry-label-help" placeholder="Enter Label (required)">
+    	<small id="entry-label-help" class="form-text text-muted">Something recognizable so you dont see a list of 25 stack overflow urls.</small>
 	</div>
 	<div class="form-group">
 		<label for="entry-link">Entry Link:</label>
    		<input type="text" data-ng-model="entry.entryLink" class="form-control" id="entry-link" aria-describedby="entry-link-help" placeholder="Enter URL (required)">
-    	<small id="entry-link-help" class="form-text text-muted">Use the full URL.</small>
+    	<small id="entry-link-help" class="form-text text-muted">The url for the resource.</small>
 	</div>
 	<div class="form-group">
-		<label for="entry-description">Entry Keywords</label>
-   		<input type="text" data-ng-model="entry.entryKeywords" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    	<small id="emailHelp" class="form-text text-muted">Put some keywords in and find it easier when you need it.</small>
+		<label for="entry-keywords">Entry Keywords</label>
+   		<input type="text" data-ng-model="entry.entryKeywords" class="form-control" id="entry-keywords" aria-describedby="entry-keywords-help" placeholder="Keywords">
+    	<small id="entry-keywords-help" class="form-text text-muted">Put some keywords in and find it easier when you need it.</small>
 	</div>
 	
 	<button ng-class="validateForm() ? ' ' : 'disabled'" class="btn btn-primary " data-ng-click="addEntry()">Add Entry</button>
