@@ -6,7 +6,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "  <h1>Organizer</h1>\n" +
     "\n" +
     "  <p class=\"lead\">\n" +
-    "    A place tp keep track of important links.\n" +
+    "    A place tp keep track of important links. (Google provided by default.)\n" +
     "  </p>\n" +
     "\n" +
     "\n" +
