@@ -3,8 +3,6 @@ angular.module( 'ngBoilerplate', [
   'templates-common',
   'ngBoilerplate.home',
   'ui.router'
-  
-
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {

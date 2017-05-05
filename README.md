@@ -13,17 +13,17 @@ Create a sample Angular app to showcase some of my code. Sample project allows f
 
 ## Thought Process
 
-I have extensive experience working with Javascript and many front end libraries and frameworks. My exposure to Angular has been limitted so I started the project with a Google search `Great Angular boilerplate apps`. ngBoilerplate instantly stood out and it only took a few minutes to set up their sample app and get started. I have kept the ngBoilerplate README below.
+I have extensive experience working with Javascript and many front end libraries and frameworks. My exposure to Angular has been limited so I started the project with a Google search `Great Angular boilerplate apps`. ngBoilerplate instantly stood out and it only took a few minutes to set up their sample app and get started. I have kept the ngBoilerplate README below.
 
-When developing this I applied my personal phylosophy I refer to as the `2 Hour, 2 Day, 2 Week` approach. While I love to do the cool stuff scope creep can explode a project so I like to define 3 goals. The basic `2 Hour` approach is focusing on satisfying the requirements of the project as simple as possible. Then define the `2 Day` goal. This is generally the low hanging fruit that is the easiest tasks to complete that add the most benifit to the project. The `2 Week Goal` is the more ambitious vision that starts getting you excited to work on.
+When developing this I applied my personal philosophy I refer to as the `2 Hour, 2 Day, 2 Week` approach. While I love to do the cool stuff scope creep can explode a project so I like to define 3 goals. The basic `2 Hour` approach is focusing on satisfying the requirements of the project as simple as possible. Then define the `2 Day` goal. This is generally the low hanging fruit that is the easiest tasks to complete that add the most benefit to the project. The `2 Week Goal` is the more ambitious vision that starts getting you excited to work on.
 
-Working from this perspective I can complete the `2 hour` approach but try to make sure that the code is flexible enough to accomodate for the more ambitious versions later without having to throw out code. 
+Working from this perspective I can complete the `2 hour` approach but try to make sure that the code is flexible enough to accommodate for the more ambitious versions later without having to throw out code. 
 
 To get more specific. `2 Hour` meant not supporting persistent storage. Since the obvious addition was persistent storage in the `2 Week` vision I left code to easily add that in.  
 
 ## Problems
 
-Moving forward with this the only structural problem I see is that I dont have the factory for the entries in a more globally accessable area. More than likely any additional views would also want access to this data. 
+Moving forward with this the only structural problem I see is that I dont have the factory for the entries in a more globally accessible area. More than likely any additional views would also want access to this data. 
 
 
 # [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
